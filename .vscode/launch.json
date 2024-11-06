@@ -1,4 +1,5 @@
 {
+  "version": "0.2.0",
   "configurations": [
     {
       "name": "C/C++: clang++ build and debug active file",
@@ -12,6 +13,14 @@
       "externalConsole": true,
       "MIMode": "lldb",
       "preLaunchTask": "C/C++: clang++ build active file"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/varvbar/projects/practicum/sprint7/T1",
+      "program": "/Users/varvbar/projects/practicum/sprint7/T1/build/Debug/outDebug"
     }
-  ],
-  "version": "2.0.0"
+  ]
+}
