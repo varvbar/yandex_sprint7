@@ -1,0 +1,8 @@
+{
+    
+    "files.associations": {
+        "iostream": "cpp",
+        "map": "cpp",
+        "*.tpp": "cpp" //все tpp файлы
+    }
+}

@@ -19,8 +19,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/varvbar/projects/practicum/sprint7/T1",
-      "program": "/Users/varvbar/projects/practicum/sprint7/T1/build/Debug/outDebug"
+      "cwd": "/Users/varvbar/projects/practicum/sprint7/T2",
+      "program": "/Users/varvbar/projects/practicum/sprint7/T2/build/Debug/outDebug"
     }
   ]
 }
