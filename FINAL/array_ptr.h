@@ -30,12 +30,32 @@ public:
     // Запрещаем копирование
     ArrayPtr(const ArrayPtr&) = delete;
 
+    // Move constructor
+    ArrayPtr(ArrayPtr&& arr_temp) {
+        
+        raw_ptr_ = std::exchange(arr_temp.raw_ptr_, nullptr);
+        
+    }
+
     ~ArrayPtr() {
         delete[] raw_ptr_;
     }
 
-    // Запрещаем присваивание
+    // Запрещаем присваивание 
     ArrayPtr& operator=(const ArrayPtr&) = delete;
+
+
+    // Присваивание перемещением
+    ArrayPtr& operator=(ArrayPtr&& arr_temp) {
+
+        if (this != &arr_temp) {
+
+            raw_ptr_ = std::exchange(arr_temp.raw_ptr_, nullptr);
+
+        }
+        
+        return *this;
+    }
 
     // Прекращает владением массивом в памяти, возвращает значение адреса массива
     // После вызова метода указатель на массив должен обнулиться
